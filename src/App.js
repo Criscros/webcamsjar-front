@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>WEBCAMSJAR</code>
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="http://ec2-18-204-213-116.compute-1.amazonaws.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          VISITAR
         </a>
       </header>
     </div>
