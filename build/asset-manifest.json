@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.50f5e988.js",
+    "main.css": "/static/css/main.04179b6f.css",
+    "main.js": "/static/js/main.2593c59f.js",
     "static/js/787.60235f71.chunk.js": "/static/js/787.60235f71.chunk.js",
+    "static/media/chaturbate.png": "/static/media/chaturbate.5bc6011f8a2c23c33ab4.png",
+    "static/media/camsoda.jpeg": "/static/media/camsoda.94f4879eca9a27b2a6de.jpeg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.50f5e988.js.map": "/static/js/main.50f5e988.js.map",
+    "main.04179b6f.css.map": "/static/css/main.04179b6f.css.map",
+    "main.2593c59f.js.map": "/static/js/main.2593c59f.js.map",
     "787.60235f71.chunk.js.map": "/static/js/787.60235f71.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.50f5e988.js"
+    "static/css/main.04179b6f.css",
+    "static/js/main.2593c59f.js"
   ]
 }
