@@ -88,42 +88,6 @@ const router = new Router({
             children: [
               
               {
-                path: '/estudios',
-                name: 'estudios',
-                component: () => import('./views/estudios/EstudiosList.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                }
-              },
-              {
-                path: '/performer-videos',
-                name: 'performer-videos',
-                component: () => import('./views/performer-videos/PerformerVideosList.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                }
-              },
-              {
-                path: '/performer-details',
-                name: 'performer-details',
-                component: () => import('./views/performer-details/PerformerDetails.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                }
-              },
-              {
-                path: '/upload-video',
-                name: 'performer',
-                component: () => import('./views/performer-videos/CreateVideoPerformer.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                }
-              },
-              {
                 path: '/performers',
                 name: 'performer',
                 component: () => import('./views/performers/PerformerList.vue'),
@@ -132,94 +96,17 @@ const router = new Router({
                   authRequired : true
                 }
               },
-              // {
-              //   path: '/model/:id',
-              //   name: 'home',
-              //   component: () => import('./views/performers/PerformerList.vue'),
-              //   meta: {
-              //     rule: 'admin',
-              //     authRequired : true
-              //   }
-              // },
+             
               {
-                path: '/studio-setings',
-                name: 'studio setings',
-                component: () => import('./views/studio-settings/StudioSettings.vue'),
+                path: '/last-videos',
+                name: 'last videos',
+                component: () => import('./views/performers/LastVideos.vue'),
                 meta: {
                   rule: 'admin',
                   authRequired : true
                 }
-                
               },
-              
-              {
-                path: '/sucursals',
-                name: 'sucursales',
-                component: () => import('./views/sucursal/SucursalList.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                },                
-              },
-
-              {
-                path: '/create-sucursal',
-                name: 'sucursales',
-                component: () => import('./views/sucursal/SucursalCreate.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                },
-              },
-              {
-                path: '/edit-sucursal/:sucursal_id',
-                name: 'sucursales-photos',
-                component: () => import('./views/sucursal/EditSucursal.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                },
-              },
-              {
-                path: '/performer-details/:_id',
-                name: 'performer-details',
-                component: () => import('./views/performer-details/PerformerDetails.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                },
-              },
-              {
-                path: '/sucursales/:id/multimedia',
-                name: 'sucursales',
-                component: () => import('./views/sucursal/SucursalMultimedia.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                },
-              },
-              {
-                path: '/sucursal/:id_sucursal/logo',
-                name: 'logo sucursal',
-                component: () => import('./views/sucursal/SucursalLogo.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                },                      
-                
-              },
-
-              {
-                path: '/sucursales/:id/photos',
-                name: 'sucursales-photos',
-                component: () => import('./views/sucursal/SucursalPhotos.vue'),
-                meta: {
-                  rule: 'admin',
-                  authRequired : true
-                },                      
-                
-              },
-
+            
               {
                 path: '/page2',
                 name: 'page-2',

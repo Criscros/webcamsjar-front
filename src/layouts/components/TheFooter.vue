@@ -14,7 +14,7 @@
         <p>
           <span>COPYRIGHT &copy;</span>
           <span>{{ new Date().getFullYear() }} </span>
-          <a href="https://admin.mokitajar.com" target="_blank" rel="nofollow">MOKITAJAR</a>
+          <a href="https://www.webcamsjar.com" target="_blank" rel="nofollow">WEBCAMSJAR</a>
           <span class="hidden sm:inline-block">, All rights Reserved</span>
         </p>
         <span class="md:flex hidden items-center">

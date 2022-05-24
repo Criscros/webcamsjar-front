@@ -12,19 +12,31 @@ export default [
 
     {
       url: "/performer-videos",
-      name: "Videos",
+      name: "Jar Tv",
       slug: "video",
       icon: "VideoIcon",
       submenu: [
         {
-          url: '/performer-videos',
-          name: 'Mis videos',
+          url: '/last-videos',
+          name: 'Recientes',
+          slug: 'dashboard-analytics',
+          i18n: 'Analytics'
+        },
+        {
+          url: '/buscar-performer',
+          name: 'buscar',
           slug: 'dashboard-analytics',
           i18n: 'Analytics'
         },
         {
           url: '/upload-video',
-          name: 'agregar video',
+          name: 'favoritas',
+          slug: 'dashboard-analytics',
+          i18n: 'Analytics'
+        },
+        {
+          url: '/upload-video',
+          name: 'tv',
           slug: 'dashboard-analytics',
           i18n: 'Analytics'
         },

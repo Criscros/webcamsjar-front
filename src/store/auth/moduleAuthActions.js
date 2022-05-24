@@ -308,13 +308,10 @@ export default {
             // Navigate User to homepage
             // router.push(router.currentRoute.query.to || '/sucursals')
  
-            if (response.data.userData.role == "performer") {
-              router.push(router.currentRoute.query.to || '/performer-videos')
-            }
-            if (response.data.userData.role == "studio") {
-              localStorage.setItem('studio_id',response.data.studio_id)
-              router.push(router.currentRoute.query.to || 'sucursals')
-            }
+       
+            router.push(router.currentRoute.query.to || '/performers')
+ 
+
 
             store.commit('UPDATE_USER_INFO', {
               displayName: response.data.userData.nick,
@@ -362,7 +359,7 @@ export default {
             commit('SET_BEARER', response.data.userData.accessToken)
             resolve(response)
              // Redirect User
-            router.push(router.currentRoute.query.to || '/sucursals')
+            router.push(router.currentRoute.query.to || '/performers')
           }else{
             console.log('login faill',response.data) 
           }

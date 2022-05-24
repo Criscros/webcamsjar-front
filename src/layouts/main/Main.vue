@@ -13,7 +13,7 @@
 
     <v-nav-menu
       :navMenuItems = "navMenuItems"
-      title         = "MokitaJar"
+      title         = "webcamsJar"
       parent        = ".layout--main" />
 
     <div id="content-area" :class="[contentAreaClass, {'show-overlay': bodyOverlay}]">
@@ -119,8 +119,8 @@ import BackToTop           from 'vue-backtotop'
 import HNavMenu            from "@/layouts/components/horizontal-nav-menu/HorizontalNavMenu.vue"
 
 import navMenuItems        from "@/layouts/components/vertical-nav-menu/navMenuItems.js"
-import navMenuPerformer        from "@/layouts/components/vertical-nav-menu/navMenuPerformer.js"
-import navMenuStudio        from "@/layouts/components/vertical-nav-menu/navMenuStudio.js"
+import navMenuWatcher        from "@/layouts/components/vertical-nav-menu/navMenuWatcher.js"
+import navMenuWatcherPay        from "@/layouts/components/vertical-nav-menu/navMenuWatcherPay.js"
 
 
 
@@ -148,8 +148,8 @@ export default {
       navbarColor       : themeConfig.navbarColor || '#fff',
       navbarType        : themeConfig.navbarType  || 'floating',
       navMenuItems      : navMenuItems,
-      navMenuPerformer  : navMenuPerformer,
-      navMenuStudio     : navMenuStudio,
+      navMenuWatcher    : navMenuWatcher,
+      navMenuWatcherPay : navMenuWatcherPay,
       routerTransition  : themeConfig.routerTransition || 'none',
       routeTitle        : this.$route.meta.pageTitle
     }
@@ -224,12 +224,12 @@ export default {
     const color = this.navbarColor == "#fff" && this.isThemeDark ? "#10163a" : this.navbarColor
     this.updateNavbarColor(color)
     this.setNavMenuVisibility(this.$store.state.mainLayoutType) 
-    // USER ROL MENU
-    if(JSON.parse(localStorage.getItem('userInfo')).userRole== 'performer'){
-        this.navMenuItems = this.navMenuPerformer
+    // USER ROL NO PAY
+    if(JSON.parse(localStorage.getItem('userInfo')).rol== 'watcher'){
+        this.navMenuItems = this.navMenuWatcher
     }
     if(JSON.parse(localStorage.getItem('userInfo')).userRole == "studio"){
-       this.navMenuItems = this.navMenuStudio
+       this.navMenuItems = this.navMenuWatcherPay
     }
     console.log('ROL MAIN',JSON.parse(localStorage.getItem('userInfo')))
   
