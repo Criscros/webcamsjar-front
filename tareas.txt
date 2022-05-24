@@ -1,0 +1,3 @@
+// variables de entorno .env
+// eliminar fotos de s3
+// validar la subida de imagenes por diferentes personas
