@@ -309,7 +309,7 @@ export default {
             // router.push(router.currentRoute.query.to || '/sucursals')
  
        
-            router.push(router.currentRoute.query.to || '/performers')
+            router.push(router.currentRoute.query.to || '/')
  
 
 

@@ -47,14 +47,14 @@ export default {
     })
   },
   login (email, pwd) {
-    return axios.post('/api/auth/login', {
+    return axios.post('/api/webcamsjar/watcher/login', {
       email,
       password: pwd
     })
   },
   registerUser (name, email, pwd,rol) {
 
-    return axios.post('/api/auth/studio/register', {
+    return axios.post('/api/webcamsjar/watcher/register', {
       displayName: name,
       email,
       password: pwd,
@@ -66,8 +66,8 @@ export default {
     return axios.post('/api/auth/refresh-token', {accessToken: localStorage.getItem('accessToKen')})
   },
   forgotPassword (email){
-
-    return axios.post('/api/auth/forgotpassword', {
+    
+    return axios.post('/api/webcamsjar/watcher/forgotpassword', {
       email: email,
     })
   },

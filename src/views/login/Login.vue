@@ -25,7 +25,7 @@
 
                 <div class="vx-card__title mb-4">
                   <h4 class="mb-4">Login</h4>
-                  <p>Bienvenido , a Mokita JAR.</p>
+                  <p>WEBCAMS JAR.</p>
                 </div>
 
                 <div>
@@ -90,8 +90,8 @@ import moduleAuthMokita from '@/store/auth-mokita/AuthMokitaModules.js'
 export default{
   data() {
     return {
-      email: "aaa@gmail.com",
-      password: "123456789",
+      email: "",
+      password: "",
       checkbox_remember_me: false,
     }
   },

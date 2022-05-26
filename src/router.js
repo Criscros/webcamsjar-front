@@ -34,6 +34,9 @@ const router = new Router({
         {
           path: '',
           component: () => import('@/layouts/full-page/front-page.vue'),
+          meta:{
+            authRequired : true
+          }
         },
         {
           path: '/estudio-webcam',
